@@ -10,9 +10,6 @@ jobs:
   test:
     runs-on: windows-latest
     steps:
-      - run: Add-Content $env:GITHUB_PATH $env:KIT_PATH
-      - run: echo $env:GITHUB_PATH
       - run: echo 'C:\Program Files (x86)\Windows Kits\10\App Certification Kit' >> $env:GITHUB_PATH
-      - run: echo $env:GITHUB_PATH
       - run: makeappx.exe
 

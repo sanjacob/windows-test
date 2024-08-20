@@ -14,6 +14,8 @@ jobs:
       - run: echo $env:GITHUB_PATH
       - run: echo "C:\Program Files (x86)\Windows Kits\10\App Certification Kit" >> $GITHUB_PATH
       - run: echo $env:GITHUB_PATH
-      - run: $makeappx = "C:\Program Files (x86)\Windows Kits\10\App Certification Kit\makeappx.exe"
-      - run: & $makeappx help
+      - run: |
+          $makeappx = "C:\Program Files (x86)\Windows Kits\10\App Certification Kit\makeappx.exe"
+      - run: |
+        & $makeappx help
 

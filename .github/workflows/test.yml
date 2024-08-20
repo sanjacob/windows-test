@@ -17,5 +17,5 @@ jobs:
       - run: |
           $makeappx = "C:\Program Files (x86)\Windows Kits\10\App Certification Kit\makeappx.exe"
       - run: |
-        & $makeappx help
+          & $makeappx help
 

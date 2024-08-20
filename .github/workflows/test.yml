@@ -1,0 +1,17 @@
+name: Test
+
+on:
+  push:
+  pull_request:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: windows-latest
+    steps:
+      - run: ls "C:\Program Files (x86)\Windows Kits\10\"
+      - run: ls "C:\Program Files (x86)\Windows Kits\10\App Certification Kit"
+      - run: ls "C:\Program Files (x86)\Windows Kits\10\App Certification Kit"
+
+      - run: ls "C:\Program Files (x86)\Windows Kits\10\bin"
